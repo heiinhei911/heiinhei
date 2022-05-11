@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/heiinhei/static/css/main.39e537bc.css",
-    "main.js": "/heiinhei/static/js/main.ba4d6a8d.js",
+    "main.css": "/heiinhei/static/css/main.bd78ff20.css",
+    "main.js": "/heiinhei/static/js/main.9bec1bf3.js",
     "static/js/787.a0288c29.chunk.js": "/heiinhei/static/js/787.a0288c29.chunk.js",
     "static/media/SF-Pro-Text-Medium.otf": "/heiinhei/static/media/SF-Pro-Text-Medium.d8bb87473fe937958666.otf",
     "static/media/SF-Pro-Text-Semibold.otf": "/heiinhei/static/media/SF-Pro-Text-Semibold.5a6801937571c299234d.otf",
@@ -20,12 +20,12 @@
     "static/media/SF-Pro-Display-Regular.otf": "/heiinhei/static/media/SF-Pro-Display-Regular.d1f5e6e16dd4f75c3950.otf",
     "static/media/bulletin_board.jpg": "/heiinhei/static/media/bulletin_board.c5a695afa1b161a4ea75.jpg",
     "index.html": "/heiinhei/index.html",
-    "main.39e537bc.css.map": "/heiinhei/static/css/main.39e537bc.css.map",
-    "main.ba4d6a8d.js.map": "/heiinhei/static/js/main.ba4d6a8d.js.map",
+    "main.bd78ff20.css.map": "/heiinhei/static/css/main.bd78ff20.css.map",
+    "main.9bec1bf3.js.map": "/heiinhei/static/js/main.9bec1bf3.js.map",
     "787.a0288c29.chunk.js.map": "/heiinhei/static/js/787.a0288c29.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39e537bc.css",
-    "static/js/main.ba4d6a8d.js"
+    "static/css/main.bd78ff20.css",
+    "static/js/main.9bec1bf3.js"
   ]
 }
