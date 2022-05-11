@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ScreenProvider } from "./contexts/DeviceContext";
+import { AnimatePresence } from "framer-motion";
+import useDarkMode from "./hooks/useDarkMode";
+import Navbar from "./components/Navbar";
+import Homepage from "./pages/Homepage";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(window.localStorage.getItem("dark-mode-enabled")) || false
   );
-}
+
+  useDarkMode(darkMode);
+
+  return (
+    <ScreenProvider>
+      <div className="App theme-transition font-text md:font-display min-w-full">
+        <AnimatePresence>
+          <Router>
+            <Navbar
+              darkMode={darkMode}
+              toggleDarkMode={() => setDarkMode((prevMode) => !prevMode)}
+            />
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              {/* <Route path="/projects" element={<Projects />} /> */}
+              <Route path="*" element={<Homepage />} />
+            </Routes>
+            <Footer />
+          </Router>
+        </AnimatePresence>
+      </div>
+    </ScreenProvider>
+  );
+};
 
 export default App;

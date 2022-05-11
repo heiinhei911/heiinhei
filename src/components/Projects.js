@@ -1,0 +1,31 @@
+import ProjectCard from "./ProjectCard";
+import projectData from "../project_data";
+import { MdKeyboardArrowRight } from "react-icons/md";
+import Section from "./Section";
+
+const Projects = ({ projectsRef, style }) => {
+  const projects = projectData.map((project) => (
+    <ProjectCard key={project.id} {...project} />
+  ));
+
+  return (
+    <Section
+      id="projects"
+      sectionRef={projectsRef}
+      style={{ ...style, height: "max-content" }}
+      heading="Projects"
+      subHeading="They Represent My Learning Journey."
+    >
+      <div className="md:flex md:flex-col md:justify-start md:items-center divide-y divide-gray-300 dark:divide-neutral-500 max-w-lg md:max-w-none">
+        {projects}
+      </div>
+      <div className="btns flex flex-row justify-center items-center text-lg mt-3 md:mt-6">
+        <span className="inline-block">
+          <MdKeyboardArrowRight size="2rem" />
+        </span>
+        <p>More projects page (coming soon)</p>
+      </div>
+    </Section>
+  );
+};
+export default Projects;
