@@ -2,9 +2,9 @@
 
 This is Hei In Sam's personal/portfolio website. Feel like to check out my projects and browse around!
 
-# Libraries/Framework used
+# Libraries/Frameworks Used
 
-React, Tailwind CSS, Framer Motion
+React, React Router, Tailwind CSS, Framer Motion
 
 # Credits
 
