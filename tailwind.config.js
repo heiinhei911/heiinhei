@@ -6,8 +6,8 @@ module.exports = {
       center: true,
     },
     fontFamily: {
-      display: ["SFProDisplay", "sans-serif"],
-      text: ["SFProText", "sans-serif"],
+      display: ["Display", "sans-serif"],
+      text: ["Text", "sans-serif"],
       source: ["Source Code Pro", "monospace"],
     },
 

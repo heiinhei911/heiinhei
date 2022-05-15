@@ -55,96 +55,96 @@
 }
 
 /* FONTS */
-/* SFProDisplay */
+/* Display */
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Black.otf") format("opentype");
   font-weight: 900;
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Heavy.otf") format("opentype");
   font-weight: 800;
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Bold.otf") format("opentype");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Semibold.otf")
     format("opentype");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Medium.otf") format("opentype");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Regular.otf") format("opentype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Light.otf") format("opentype");
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Ultralight.otf")
     format("opentype");
   font-weight: 200;
 }
 
 @font-face {
-  font-family: "SFProDisplay";
+  font-family: "Display";
   src: url("./fonts/SFProDisplay/SF-Pro-Display-Thin.otf") format("opentype");
   font-weight: 100;
 }
 
-/* SFProText */
+/* Text */
 @font-face {
-  font-family: "SFProText";
+  font-family: "Text";
   src: url("./fonts/SFProText/SF-Pro-Text-Heavy.otf") format("opentype");
   font-weight: 800;
 }
 
 @font-face {
-  font-family: "SFProText";
+  font-family: "Text";
   src: url("./fonts/SFProText/SF-Pro-Text-Bold.otf") format("opentype");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "SFProText";
+  font-family: "Text";
   src: url("./fonts/SFProText/SF-Pro-Text-Semibold.otf") format("opentype");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: "SFProText";
+  font-family: "Text";
   src: url("./fonts/SFProText/SF-Pro-Text-Medium.otf") format("opentype");
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "SFProText";
+  font-family: "Text";
   src: url("./fonts/SFProText/SF-Pro-Text-Regular.otf") format("opentype");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "SFProText";
+  font-family: "Text";
   src: url("./fonts/SFProText/SF-Pro-Text-Light.otf") format("opentype");
   font-weight: 300;
 }
