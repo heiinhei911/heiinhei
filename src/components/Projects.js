@@ -23,7 +23,13 @@ const Projects = ({ projectsRef, style }) => {
         <span className="inline-block">
           <MdKeyboardArrowRight size="2rem" />
         </span>
-        <p>More projects page (coming soon)</p>
+        <a
+          href="https://github.com/heiinhei911"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Check out my Github for more!
+        </a>
       </div>
     </Section>
   );
