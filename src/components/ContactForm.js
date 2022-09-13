@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { headingsHeight } from "./Section";
 import { send } from "emailjs-com";
 import { FaArrowRight, FaCheck } from "react-icons/fa";
 
@@ -43,7 +42,7 @@ const ContactForm = ({ headingsHeight }) => {
       style={{ minHeight: `calc(100% - ${headingsHeight}px)` }} // 2.25rem
       // className="w-full py-1 md:py-0 max-w-2xl md:px-5 block mx-auto"
     >
-      <label className="contact-form-label first:mt-0">
+      <label className="contact-form-label first:mt-0" htmlFor="name">
         Name{" "}
         <input
           type="text"
@@ -51,10 +50,11 @@ const ContactForm = ({ headingsHeight }) => {
           placeholder="Your name..."
           required
           value={name}
+          name="name"
           onChange={(e) => setName(e.target.value)}
         />
       </label>
-      <label className="contact-form-label">
+      <label className="contact-form-label" htmlFor="email">
         Email{" "}
         <input
           type="email"
@@ -62,10 +62,11 @@ const ContactForm = ({ headingsHeight }) => {
           placeholder="Your email address..."
           required
           value={email}
+          name="email"
           onChange={(e) => setEmail(e.target.value)}
         />
       </label>
-      <label className="contact-form-label">
+      <label className="contact-form-label" htmlFor="subject">
         Subject{" "}
         <input
           type="text"
@@ -73,10 +74,11 @@ const ContactForm = ({ headingsHeight }) => {
           placeholder="What's your message?"
           required
           value={subject}
+          name="subject"
           onChange={(e) => setSubject(e.target.value)}
         />
       </label>
-      <label className="contact-form-label">
+      <label className="contact-form-label" htmlFor="message">
         Message{" "}
         <textarea
           type="text"
@@ -85,6 +87,7 @@ const ContactForm = ({ headingsHeight }) => {
           placeholder="Write a description of your message..."
           required
           value={message}
+          name="message"
           onChange={(e) => setMessage(e.target.value)}
         />
       </label>

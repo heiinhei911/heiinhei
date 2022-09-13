@@ -5,7 +5,9 @@ import Section from "./Section";
 
 const Projects = ({ projectsRef, style }) => {
   const projects = projectData.map((project) => (
-    <ProjectCard key={project.id} {...project} />
+    <li key={project.id}>
+      <ProjectCard {...project} />
+    </li>
   ));
 
   return (
@@ -16,9 +18,9 @@ const Projects = ({ projectsRef, style }) => {
       heading="Projects"
       subHeading="They Represent My Learning Journey."
     >
-      <div className="md:flex md:flex-col md:justify-start md:items-center divide-y divide-gray-300 dark:divide-neutral-500 max-w-lg md:max-w-none">
+      <ul className="md:flex md:flex-col md:justify-start md:items-center divide-y divide-gray-300 dark:divide-neutral-500 max-w-lg md:max-w-none">
         {projects}
-      </div>
+      </ul>
       <div className="btns flex flex-row justify-center items-center text-lg mt-3 md:mt-6">
         <span className="inline-block">
           <MdKeyboardArrowRight size="2rem" />

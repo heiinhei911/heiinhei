@@ -8,7 +8,7 @@ const projectData = [
       "A word-guessing multiplayer game that challenges players to guess a series of words based on the drawings from other players over multiple rounds.",
     stack: [
       "ReactJS",
-      "React Router",
+      "TypeScript",
       "SASS Modules",
       "Socket.io",
       "NodeJS",
