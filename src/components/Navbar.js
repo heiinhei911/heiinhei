@@ -15,15 +15,26 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     setExpand(!isSmallScreen);
   }, [isSmallScreen]);
 
+  const togglePrevMode = () => {
+    setExpand((prevExpand) => !prevExpand);
+  };
+
   const collapsedMenuItems = [
-    <Link to={{ pathname: "/", hash: "#home" }}>About</Link>,
-    <Link to={{ pathname: "/", hash: "#projects" }}>Projects</Link>,
-    <Link to={{ pathname: "/", hash: "#contact" }}>Contact</Link>,
+    <Link to={{ pathname: "/", hash: "#home" }} tabIndex={expand ? 4 : 0}>
+      About
+    </Link>,
+    <Link to={{ pathname: "/", hash: "#projects" }} tabIndex={expand ? 5 : 0}>
+      Projects
+    </Link>,
+    <Link to={{ pathname: "/", hash: "#contact" }} tabIndex={expand ? 6 : 0}>
+      Contact
+    </Link>,
   ].map((item) => (
     <motion.li
       className="navbar-items"
       key={uuid()}
-      onClick={() => isSmallScreen && setExpand((prevExpand) => !prevExpand)}
+      onClick={() => isSmallScreen && togglePrevMode}
+      onKeyDown={() => isSmallScreen && togglePrevMode}
     >
       {item}
     </motion.li>
@@ -47,19 +58,24 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
       >
         <ul className="wrapper grid grid-rows-[repeat(5,auto)] grid-cols-[2fr_repeat(2,1fr)] md:grid-cols-[fit-content(20%)_minmax(0,1fr)_repeat(3,minmax(0,10%))_5%] md:grid-rows-1 text-lg">
           <h1 className="row-span-5 md:row-auto btns flex flex-col justify-center items-start text-xl font-semibold md:text-2xl">
-            <Link to={{ pathname: "/" }}>Hei In Sam</Link>
+            <Link to={{ pathname: "/" }} tabIndex={expand ? 1 : 0}>
+              Hei In Sam
+            </Link>
           </h1>
           <li className="col-span-2 md:col-auto flex flex-row justify-end items-center md:flex-col md:justify-center md:items-end">
             <a
               href="https://github.com/heiinhei911"
               target="_blank"
               rel="noreferrer"
+              tabIndex={expand ? 2 : 0}
             >
               <BsGithub size="1.2rem" className="btns mr-5 md:mr-3" />
             </a>
             <span
               className="md:hidden cursor-pointer flex flex-row justify-end items-center text-right my-2"
-              onClick={() => setExpand((prevExpand) => !prevExpand)}
+              onClick={togglePrevMode}
+              onKeyDown={togglePrevMode}
+              tabIndex={expand ? 3 : 0}
             >
               {expand ? <MdClose size="1.5rem" /> : <IoMenu size="1.5rem" />}
             </span>
@@ -78,6 +94,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                     darkMode ? "justify-end" : "justify-start"
                   } items-center bg-black dark:bg-white px-px relative group`}
                   onClick={toggleDarkMode}
+                  onKeyDown={toggleDarkMode}
+                  tabIndex={0}
                 >
                   <motion.span
                     className="rounded-full w-3.5 h-3.5 bg-white dark:bg-black pc-hover:hover:border pc-hover:hover:border-black dark:pc-hover:hover:border-white"

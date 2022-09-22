@@ -54,13 +54,17 @@ const About = ({ aboutRef }) => {
             rotate: [0, 40, 0],
             transition: { delay: 0.5, duration: 1 },
           }}
+          tabIndex={0}
         >
           👋
         </motion.span>
-        <h1 className="section-title text-5xl md:text-8xl font-bold text-yellow-500 my-1">
+        <h1
+          className="section-title text-5xl md:text-8xl font-bold text-yellow-500 my-1"
+          tabIndex={0}
+        >
           Hello!
         </h1>
-        <h2 className="text-4xl md:text-6xl my-1 mb-3">
+        <h2 className="text-4xl md:text-6xl my-1 mb-3" tabIndex={0}>
           I'm Hei In. I build websites.
         </h2>
         <p className="flex flex-row justfy-start items-center my-1 mt-10 text-lg">
