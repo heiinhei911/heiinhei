@@ -33,8 +33,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     <motion.li
       className="navbar-items"
       key={uuid()}
-      onClick={() => isSmallScreen && togglePrevMode}
-      onKeyDown={() => isSmallScreen && togglePrevMode}
+      onClick={() => isSmallScreen && setExpand((prevExpand) => !prevExpand)}
+      onKeyDown={() => isSmallScreen && setExpand((prevExpand) => !prevExpand)}
     >
       {item}
     </motion.li>
