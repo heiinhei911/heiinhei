@@ -6,7 +6,15 @@ const projectData = [
     title: "Video Games REST API",
     description:
       "A REST API containing a collection of video games with authentication built-in.",
-    stack: ["Python", "Django", "Django REST", "PostgreSQL", "Docker", "Azure"],
+    stack: [
+      "Python",
+      "Django",
+      "Django REST",
+      "Django REST JWT",
+      "PostgreSQL",
+      "Docker",
+      "Azure",
+    ],
     img: "video_games",
     url: "https://github.com/heiinhei911/games-restapi/",
   },
