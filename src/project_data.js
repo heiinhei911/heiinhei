@@ -5,12 +5,12 @@ const projectData = [
     id: uuid(),
     title: "Video Games REST API",
     description:
-      "A REST API containing a collection of video games with authentication built-in.",
+      "A REST API containing a collection of video games with authentication built-in",
     stack: [
       "Python",
       "Django",
       "Django REST",
-      "Django REST JWT",
+      "Django REST Simple JWT",
       "PostgreSQL",
       "Docker",
       "Azure",
@@ -22,7 +22,7 @@ const projectData = [
     id: uuid(),
     title: "Guess What",
     description:
-      "A word-guessing multiplayer game that challenges players to guess a series of words based on the drawings from other players over multiple rounds.",
+      "A word-guessing multiplayer game that challenges players to guess a series of words based on the drawings from other players over multiple rounds",
     stack: [
       "ReactJS",
       "TypeScript",
@@ -39,7 +39,7 @@ const projectData = [
     id: uuid(),
     title: "Bulletin Board",
     description:
-      "A flexible project/software management app similar to Jira and Trello that utilizes the Agile (both Scrum and Kanban) methodology.",
+      "An Agile Kanban project/software management app designed to help visualize tasks and track issues that arise throughout different stages of the Software Development Life Cycle and quality assurance",
     stack: ["ReactJS", "React Router", "Bootstrap", "SASS", "Firebase"],
     img: "bulletin_board",
     url: "https://heiinhei911.github.io/bulletin-board/",
