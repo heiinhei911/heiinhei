@@ -3,6 +3,15 @@ import { v4 as uuid } from "uuid";
 const projectData = [
   {
     id: uuid(),
+    title: "Job Scraper",
+    description:
+      "A REST API containing a collection of video games with authentication built-in",
+    stack: ["Python", "Beautiful Soup", "Selenium", "SQL Server"],
+    img: "video_games",
+    url: "https://github.com/heiinhei911/games-restapi/",
+  },
+  {
+    id: uuid(),
     title: "Video Games REST API",
     description:
       "A REST API containing a collection of video games with authentication built-in",

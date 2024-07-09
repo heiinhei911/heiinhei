@@ -65,7 +65,7 @@ const About = ({ aboutRef }) => {
           Hello!
         </h1>
         <h2 className="text-4xl md:text-6xl my-1 mb-3" tabIndex={0}>
-          I'm Hei In. I build websites.
+          I'm Hei In. I tinker with tech.
         </h2>
         <p className="flex flex-row justfy-start items-center my-1 mt-10 text-lg">
           <motion.span

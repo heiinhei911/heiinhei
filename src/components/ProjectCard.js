@@ -14,9 +14,9 @@ const ProjectCard = ({ title, description, stack, img, url }) => {
         className="w-full md:mt-0 max-h-[10rem] md:w-[20rem] md:h-full object-cover rounded"
       />
       <div className="w-full">
-        <h3 className="text-xl pt-3 md:px-3 md:py-2 font-medium text-yellow-500">
+        <h4 className="text-xl pt-3 md:px-3 md:py-2 font-medium text-yellow-500">
           {title}
-        </h3>
+        </h4>
         <p className="pb-1 md:px-3 md:pb-2 text-gray-700 dark:text-neutral-400">
           {description}
         </p>
