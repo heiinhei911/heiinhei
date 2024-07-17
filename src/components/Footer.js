@@ -20,7 +20,7 @@ const Footer = () => {
       exit={{ opacity: 0 }}
       className="theme-transition"
     >
-      <div className="wrapper flex flex-col justify-center items-start md:grid md:grid-cols-2">
+      <div className="wrapper flex flex-col justify-center items-end md:grid md:grid-cols-2">
         <h1
           className="font-medium text-right text-yellow-500 md:text-left md:order-1"
           tabIndex={0}
