@@ -4,11 +4,10 @@ const projectData = [
   {
     id: uuid(),
     title: "Job Scraper",
-    description:
-      "A REST API containing a collection of video games with authentication built-in",
+    description: "This is a web scraper for jobs on JobsDB.com HK",
     stack: ["Python", "Beautiful Soup", "Selenium", "SQL Server"],
-    img: "video_games",
-    url: "https://github.com/heiinhei911/games-restapi/",
+    img: "job_scraper",
+    url: "https://github.com/heiinhei911/job-scraper/",
   },
   {
     id: uuid(),
