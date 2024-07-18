@@ -5,7 +5,7 @@ const projectData = [
     id: uuid(),
     title: "Job Insights",
     description:
-      "A customizable web scraper for jobs on JobsDB.com HK with in-depth analysis and visualization on current market data to uncover insights that can help job seekers and employers better understand employment trends",
+      "A customizable web scraper for jobs on JobsDB.com HK with in-depth analysis and visualization of current market data to uncover insights that can help job seekers and employers better understand employment trends",
     stack: [
       "Python",
       "Beautiful Soup",
